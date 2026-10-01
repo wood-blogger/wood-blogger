@@ -1,0 +1,9 @@
+const toggle=document.querySelector(".menu-toggle");
+const nav=document.querySelector(".nav-links");
+toggle?.addEventListener("click",()=>nav.classList.toggle("open"));
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+document.getElementById("year")?.replaceChildren(new Date().getFullYear());
+
+document.getElementById("langBtn")?.addEventListener("click",()=>{
+  alert("النسخة الإنجليزية سنضيفها في الخطوة التالية بحيث يتغير كل محتوى الموقع تلقائيًا.");
+});
